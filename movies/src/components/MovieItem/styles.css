@@ -1,0 +1,24 @@
+img {
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  .custom-card {
+    text-align: center;
+    padding: 8px;
+  }
+  .custom-card p {
+    color: #999;
+  }
+
+  .Movie {
+    width: 240px;
+    /* margin: 10px auto; */
+    max-height: 500px;
+  }
+  .Movie-buttons {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+  }
