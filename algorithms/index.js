@@ -15,6 +15,7 @@ function amount(amount) {
 }
 
 const x = amount(17984);
+console.log('Ejercicio de denominaciones')
 console.log(x);
 
 
@@ -25,7 +26,29 @@ function fibonacci(input) {
         const nextPos = posFib[i-1] + posFib[i];
         posFib.push(nextPos)
     }
-    console.log(posFib)
+    return posFib;
 }
 
-fibonacci(11);
+const y =  fibonacci(11);
+console.log('Ejercicio de fibonacci');
+console.log(y);
+
+
+function arrayRandom(input) {
+    const array = Array(input).fill(0);
+    for(let i =0; i<input; i++) {
+        let nRandom;
+        while(true) {
+            nRandom = Math.floor(Math.random() * (input + 1));
+            if(!array.includes(nRandom)) {
+                break;
+        }
+        }
+        array[i] = nRandom;
+    }
+    return array;
+}
+
+const z = arrayRandom(5);
+console.log('Ejercicio de numeros aleatorios')
+console.log(z);
