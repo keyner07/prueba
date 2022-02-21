@@ -19,16 +19,13 @@ console.log(x);
 
 
 function fibonacci(input) {
-    let nSuc = 2;
+    let nSuc = 1;
     const posFib = [0,1];
-    console.log(posFib[0])
-    while(nSuc < input) {
-        const nextPos = posFib[0] + posFib[1];
-        posFib[0] = posFib[1];
-        posFib[1] = nextPos;
-        nSuc++;
-        console.log(posFib[1])
+    for(let i=nSuc; i < input; i++) {
+        const nextPos = posFib[i-1] + posFib[i];
+        posFib.push(nextPos)
     }
+    console.log(posFib)
 }
 
 fibonacci(11);
